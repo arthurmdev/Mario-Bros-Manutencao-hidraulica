@@ -9,7 +9,6 @@ function formularioContato() {
 }
 
 function escondeFormulario() {
-    
     form.style.left = "-330px";
     form.style.transform = "none";
     mascara.style.visibility = 'hidden';
