@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Mario Bros Dev</title>
 </head>
@@ -14,23 +14,27 @@
 <body>
     <div class="mascara-formulario"></div>
     <header>
-        <img src="./img/icon.png" class="logo-header">
-        <nav class="nav-menu">
-            <a href="">Home</a>
-            <a href="">Nossos Serviços</a>
-            <a href="#" id="fale-conosco">Fale Conosco</a>
-        </nav>
+        <img src="./img/icon.png">
+        <a href="">Home</a>
+        <a href="">Nossos Serviços</a>
+        <a href="#" id="fale-conosco">Fale Conosco</a>
     </header>
-
     <main>
         <div class="caixa-principal">
-            <img src="./img/logo.png" alt="Logo Mario Bros" class="logo-mario">
+            <img src="./img/logo.png" alt="logo-logo" class="logo-mario">
             <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!</p>
+            <p>
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!
+            </p>
             <button onclick="formularioContato()">Entre em contato</button>
         </div>
+
         <div>
-            <img src="./img/mario.png" alt="Mario e Luigi" class="imagem-mario-luigi">
+            <img src="./img/mario.png" alt="logo mario e luigi" class="imagem-mario-luigi">
         </div>
+
     </main>
 
     <div class="caixa-video">
@@ -38,20 +42,20 @@
         <div class="mascara"></div>
     </div>
 
-    <a href="https://api.whatsapp.com/send?phone=5584999199722&text=Olá,%20gostaria%20de%20solicitar%20um%20orçamento"
+    <a href="https://api.whatsapp.com/send?phone=5584999199722&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20constru%C3%A7%C3%A3o%20do%20meu%20site"
         target="_blank" class="link-whatsapp">
-        <img src="./img/whatsapp.png" alt="WhatsApp" />
+        <img src="./img/whatsapp.png" alt="link para o whatsapp" />
     </a>
 
     <form action="https://formcarry.com/s/xmIcDXQYDqr" method="POST" enctype="multipart/form-data"
         class="formulario-fale-conosco">
         <input type="text" placeholder="Seu nome" name="nome">
         <input type="tel" placeholder="Seu telefone" name="telefone">
-        <textarea placeholder="Digite seu problema aqui..." name="duvida"></textarea>
+        <textarea id="" placeholder="Digite seu problema aqui..." name="duvida"></textarea>
         <button type="submit">Pedir Orçamento</button>
     </form>
 
-    <script src="./script.js"></script>
 </body>
+<script src="./script.js"></script>
 
 </html>
