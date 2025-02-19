@@ -14,5 +14,8 @@ function escondeFormulario() {
     mascara.style.visibility = 'hidden';
 }
 
-mascara.addEventListener('click', escondeFormulario)
-faleConosco.addEventListener('click', formularioContato)
+mascara.addEventListener('click', escondeFormulario);
+faleConosco.addEventListener('click', (event) => {
+    event.preventDefault(); 
+    formularioContato();
+});
